@@ -1,7 +1,8 @@
 #include <stdio.h>  //printf()
-#include <stdlib.h>
+#include <stdlib.h> //malloc() free()
 #include <string.h> //strlen()
 
+/* Time Complexity: O(n), Space Complexity: O(n) */
 char *str_comp(const char *s)
 {
   char *new_s;
@@ -44,11 +45,11 @@ int main(void)
     printf("    str = %s\n", *s);
     new_str = str_comp(*s);
     printf("new_str = %s\n", new_str);
+    free(new_str);
   }
 
   printf("-- End testing --\n");
 
-  free(new_str);
-
   return 0;
 }
+

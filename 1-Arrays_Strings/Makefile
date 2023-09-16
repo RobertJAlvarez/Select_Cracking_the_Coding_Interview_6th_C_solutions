@@ -8,10 +8,14 @@ all: str_comp
 %.o: %.c
 	${CC} $(CFLAGS) -c -o $@ $<
 
-str_comp: str_compression.o
+is_unique: 1_is_unique.o
+	${CC} -o $@ $^
+	./is_unique
+
+str_comp: 6_str_compression.o
 	${CC} -o $@ $^
 	./str_comp
 
 clean:
-	rm -f *.o str_comp
+	rm -f *.o str_comp is_unique
 
