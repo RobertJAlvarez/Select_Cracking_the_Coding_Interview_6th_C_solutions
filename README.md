@@ -1,2 +1,2 @@
-# Select_Cracking_the_Coding_Interview_6th_C_solutions
+# Select Cracking the Coding Interview 6th C solutions
 Solutions for selected problems from CtCI 6th edition
